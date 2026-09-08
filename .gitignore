@@ -1,0 +1,46 @@
+# ==========================================
+# Data privacy — never commit real survey data
+# ==========================================
+data/real_data.xlsx
+data/raw/
+data/processed/
+*.sav
+*.dta
+
+# Allow demo dataset (synthetic, for reproducibility)
+!data/demo_dataset.xlsx
+
+# Allow output tables as examples
+!results/tables_full.xlsx
+!results/analysis_dataset.csv
+
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# ==========================================
+# IDE / OS
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# LaTeX aux files
+# ==========================================
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz

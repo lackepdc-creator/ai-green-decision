@@ -1,0 +1,119 @@
+AI 助手建议类型与校园绿色决策——四组随机实验顶刊级分析
+================================================================================
+
+【样本流（CONSORT）】
+                       step   n  excluded
+                  1. 原始导出样本 202         0
+       2. 含 answer_id 的有效作答 202         0
+                   3. 去重后样本 202         0
+                  4. 注意力题合格 157        45
+5. 剔除极端时长(<60s 或 >mean+3SD) 157         0
+                  6. 最终分析样本 157         0
+
+【信度】
+scale  items  alpha  alpha_ci_low  alpha_ci_high  alpha_adequate
+ 环保基线      2  0.830         0.773          0.872            True
+ AI信任      3 -0.017        -0.338          0.222           False
+ 认知负荷      3  0.109        -0.176          0.319           False
+可行性感知      2 -0.114        -0.565          0.193           False
+ 绿色意愿      3  0.089        -0.223          0.319           False
+
+【随机化平衡】
+        variable       test  statistic  p_value  effect_size effect_label sig
+  green_baseline      ANOVA      0.997    0.396        0.140    Cohen's f    
+      duration_s      ANOVA      3.252    0.023        0.253    Cohen's f  **
+          gender chi-square      3.581    0.310        0.151   Cramer's V    
+           grade chi-square     10.144    0.603        0.147   Cramer's V    
+           major chi-square      3.864    0.920        0.091   Cramer's V    
+    ai_frequency chi-square      5.951    0.745        0.112   Cramer's V    
+dining_frequency chi-square      4.154    0.901        0.094   Cramer's V    
+
+【主效应 OLS（调整，HC3）】
+           outcome                      model   contrast  estimate  std_error  ci_low  ci_high  p_value  cohen_d  n_treat  n_ref  p_BH  p_Holm sig
+green_choice_index green_choice_index:未调整 OLS B 结果型 vs A     0.137      0.133  -0.124    0.399    0.304    0.265     43.0   26.0 0.506   1.000    
+green_choice_index green_choice_index:未调整 OLS C 过程型 vs A     0.152      0.133  -0.109    0.413    0.255    0.288     46.0   26.0 0.506   1.000    
+green_choice_index green_choice_index:未调整 OLS D 范例型 vs A     0.109      0.144  -0.173    0.391    0.448    0.188     42.0   26.0 0.572   1.000    
+green_choice_index green_choice_index:未调整 OLS         R²     0.009        NaN     NaN      NaN    0.698      NaN    157.0  157.0   NaN     NaN    
+green_choice_index  green_choice_index:调整 OLS B 结果型 vs A     0.165      0.138  -0.105    0.436    0.231    0.265     43.0   26.0 0.506   1.000    
+green_choice_index  green_choice_index:调整 OLS C 过程型 vs A     0.176      0.139  -0.097    0.449    0.207    0.288     46.0   26.0 0.506   1.000    
+green_choice_index  green_choice_index:调整 OLS D 范例型 vs A     0.159      0.137  -0.109    0.427    0.245    0.188     42.0   26.0 0.506   1.000    
+green_choice_index  green_choice_index:调整 OLS         R²     0.140        NaN     NaN      NaN    0.010      NaN    157.0  157.0   NaN     NaN ***
+   green_intention    green_intention:未调整 OLS B 结果型 vs A     0.112      0.158  -0.198    0.423    0.479    0.192     43.0   26.0 0.575   1.000    
+   green_intention    green_intention:未调整 OLS C 过程型 vs A     0.270      0.171  -0.064    0.605    0.113    0.396     46.0   26.0 0.486   1.000    
+   green_intention    green_intention:未调整 OLS D 范例型 vs A     0.618      0.175   0.276    0.960    0.000    0.897     42.0   26.0 0.012   0.012 ***
+   green_intention    green_intention:未调整 OLS         R²     0.113        NaN     NaN      NaN    0.001      NaN    157.0  157.0   NaN     NaN ***
+   green_intention     green_intention:调整 OLS B 结果型 vs A     0.106      0.171  -0.228    0.440    0.533    0.192     43.0   26.0 0.615   1.000    
+   green_intention     green_intention:调整 OLS C 过程型 vs A     0.241      0.187  -0.126    0.608    0.198    0.396     46.0   26.0 0.506   1.000    
+   green_intention     green_intention:调整 OLS D 范例型 vs A     0.639      0.195   0.258    1.021    0.001    0.897     42.0   26.0 0.015   0.030 ***
+   green_intention     green_intention:调整 OLS         R²     0.184        NaN     NaN      NaN    0.004      NaN    157.0  157.0   NaN     NaN ***
+             trust              trust:未调整 OLS B 结果型 vs A     0.175      0.162  -0.142    0.492    0.280    0.273     43.0   26.0 0.506   1.000    
+             trust              trust:未调整 OLS C 过程型 vs A     0.338      0.160   0.024    0.653    0.035    0.524     46.0   26.0 0.210   0.910  **
+             trust              trust:未调整 OLS D 范例型 vs A     0.469      0.165   0.146    0.793    0.004    0.714     42.0   26.0 0.045   0.126 ***
+             trust              trust:未调整 OLS         R²     0.060        NaN     NaN      NaN    0.026      NaN    157.0  157.0   NaN     NaN  **
+             trust               trust:调整 OLS B 结果型 vs A     0.161      0.166  -0.165    0.487    0.333    0.273     43.0   26.0 0.526   1.000    
+             trust               trust:调整 OLS C 过程型 vs A     0.341      0.172   0.003    0.678    0.048    0.524     46.0   26.0 0.241   1.000  **
+             trust               trust:调整 OLS D 范例型 vs A     0.444      0.166   0.119    0.770    0.008    0.714     42.0   26.0 0.056   0.203 ***
+             trust               trust:调整 OLS         R²     0.164        NaN     NaN      NaN    0.032      NaN    157.0  157.0   NaN     NaN  **
+    cognitive_load     cognitive_load:未调整 OLS B 结果型 vs A     0.130      0.175  -0.213    0.473    0.458    0.181     43.0   26.0 0.572   1.000    
+    cognitive_load     cognitive_load:未调整 OLS C 过程型 vs A    -0.219      0.168  -0.548    0.111    0.194   -0.316     46.0   26.0 0.506   1.000    
+    cognitive_load     cognitive_load:未调整 OLS D 范例型 vs A    -0.039      0.168  -0.368    0.290    0.816   -0.059     42.0   26.0 0.816   1.000    
+    cognitive_load     cognitive_load:未调整 OLS         R²     0.035        NaN     NaN      NaN    0.175      NaN    157.0  157.0   NaN     NaN    
+    cognitive_load      cognitive_load:调整 OLS B 结果型 vs A     0.164      0.191  -0.209    0.538    0.389    0.181     43.0   26.0 0.565   1.000    
+    cognitive_load      cognitive_load:调整 OLS C 过程型 vs A    -0.236      0.181  -0.591    0.119    0.193   -0.316     46.0   26.0 0.506   1.000    
+    cognitive_load      cognitive_load:调整 OLS D 范例型 vs A    -0.064      0.187  -0.430    0.302    0.731   -0.059     42.0   26.0 0.783   1.000    
+    cognitive_load      cognitive_load:调整 OLS         R²     0.084        NaN     NaN      NaN    0.492      NaN    157.0  157.0   NaN     NaN    
+       feasibility        feasibility:未调整 OLS B 结果型 vs A     0.165      0.202  -0.230    0.560    0.414    0.209     43.0   26.0 0.565   1.000    
+       feasibility        feasibility:未调整 OLS C 过程型 vs A     0.258      0.200  -0.134    0.651    0.197    0.326     46.0   26.0 0.506   1.000    
+       feasibility        feasibility:未调整 OLS D 范例型 vs A     0.222      0.213  -0.197    0.640    0.299    0.258     42.0   26.0 0.506   1.000    
+       feasibility        feasibility:未调整 OLS         R²     0.012        NaN     NaN      NaN    0.620      NaN    157.0  157.0   NaN     NaN    
+       feasibility         feasibility:调整 OLS B 结果型 vs A     0.087      0.216  -0.337    0.511    0.686    0.209     43.0   26.0 0.762   1.000    
+       feasibility         feasibility:调整 OLS C 过程型 vs A     0.186      0.223  -0.251    0.622    0.404    0.326     46.0   26.0 0.565   1.000    
+       feasibility         feasibility:调整 OLS D 范例型 vs A     0.074      0.240  -0.397    0.545    0.759    0.258     42.0   26.0 0.785   1.000    
+       feasibility         feasibility:调整 OLS         R²     0.081        NaN     NaN      NaN    0.697      NaN    157.0  157.0   NaN     NaN    
+
+【二元 Logit OR】
+        outcome   contrast  log_odds    OR  ci_low_OR  ci_high_OR  p_value  n_obs  p_BH  p_Holm sig
+green_recycling B 结果型 vs A     0.840 2.317      0.767       6.998    0.136    157 0.408   0.681    
+green_recycling C 过程型 vs A     0.525 1.691      0.584       4.892    0.332    157 0.499   1.000    
+green_recycling D 范例型 vs A     1.279 3.594      1.131      11.424    0.030    157 0.181   0.181  **
+    green_study B 结果型 vs A     0.214 1.239      0.390       3.935    0.716    157 0.716   1.000    
+    green_study C 过程型 vs A    -0.340 0.712      0.237       2.138    0.545    157 0.654   1.000    
+    green_study D 范例型 vs A    -0.627 0.534      0.171       1.671    0.281    157 0.499   1.000    
+
+【中介分析 Bootstrap 5000】
+  contrast       mediator            outcome      a      b     c  c_prime  indirect_ab  ci_low  ci_high  ci_excludes_zero  mediated_pct  bootstrap_reps
+B 结果型 vs A          trust    green_intention  0.075  0.102 0.042    0.034        0.008  -0.074    0.097             False        18.178            5000
+B 结果型 vs A cognitive_load    green_intention  0.116 -0.161 0.042    0.060       -0.019  -0.108    0.054             False       -45.032            5000
+B 结果型 vs A    feasibility    green_intention  0.042  0.209 0.042    0.033        0.009  -0.094    0.125             False        21.051            5000
+C 过程型 vs A          trust    green_intention  0.317  0.110 0.188    0.153        0.035  -0.049    0.181             False        18.454            5000
+C 过程型 vs A cognitive_load    green_intention -0.203 -0.179 0.188    0.152        0.036  -0.036    0.168             False        19.333            5000
+C 过程型 vs A    feasibility    green_intention  0.177  0.017 0.188    0.185        0.003  -0.083    0.110             False         1.612            5000
+D 范例型 vs A          trust    green_intention  0.451  0.226 0.565    0.463        0.102  -0.026    0.284             False        18.060            5000
+D 范例型 vs A cognitive_load    green_intention -0.108 -0.083 0.565    0.556        0.009  -0.059    0.093             False         1.584            5000
+D 范例型 vs A    feasibility    green_intention  0.119  0.057 0.565    0.558        0.007  -0.048    0.105             False         1.195            5000
+B 结果型 vs A          trust green_choice_index  0.075 -0.062 0.044    0.049       -0.005  -0.072    0.050             False       -10.497            5000
+B 结果型 vs A cognitive_load green_choice_index  0.116  0.094 0.044    0.033        0.011  -0.039    0.080             False        24.845            5000
+C 过程型 vs A          trust green_choice_index  0.317 -0.035 0.190    0.202       -0.011  -0.090    0.060             False        -5.902            5000
+C 过程型 vs A cognitive_load green_choice_index -0.203 -0.015 0.190    0.187        0.003  -0.059    0.072             False         1.594            5000
+D 范例型 vs A          trust green_choice_index  0.451 -0.081 0.148    0.185       -0.037  -0.200    0.070             False       -24.737            5000
+D 范例型 vs A cognitive_load green_choice_index -0.108 -0.078 0.148    0.140        0.008  -0.049    0.082             False         5.668            5000
+
+【贝叶斯因子】
+  contrast  cohen_d  BF10_approx_t  bic_diff_H1_minus_H0  BF01_via_BIC  BF10_via_BIC
+B 结果型 vs A    0.265          1.014                 3.070         4.642         0.215
+C 过程型 vs A    0.288          1.063                 2.870         4.201         0.238
+D 范例型 vs A    0.188          0.856                 3.638         6.167         0.162
+
+【等效性检验 TOST】
+  contrast  diff    se  bound_d  p_low  p_high  equivalent_at_d=0.5
+B 结果型 vs A 0.137 0.128      0.5  0.999   0.826                False
+C 过程型 vs A 0.152 0.129      0.5  0.999   0.804                False
+D 范例型 vs A 0.109 0.145      0.5  0.996   0.892                False
+
+【事后功效】
+  contrast  observed_d  n_min  alpha  power
+B 结果型 vs A       0.265     26   0.05  0.160
+C 过程型 vs A       0.288     26   0.05  0.180
+D 范例型 vs A       0.188     26   0.05  0.104
+
+注：所有处理系数已用 BH-FDR / Holm 校正多重检验；效应量报告 Cohen's d 与 95%CI；中介报告 Bootstrap 95%CI。
