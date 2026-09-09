@@ -138,10 +138,10 @@ The main script (`analysis/top_journal_analysis.py`) runs a full top-tier-journa
 ## 🛠 Tech Stack
 
 - **Python 3.10+**
-- **Statistics**: `pandas`, `numpy`, `scipy`, `statsmodels`, `patsy`
-- **Visualization**: `matplotlib`, `seaborn`
-- **Reporting**: LaTeX (ctexart) for manuscripts, Excel for result tables
-- **Reproducibility**: Fixed random seed `20260902`
+- **Statistics** — pandas, numpy, scipy, statsmodels, patsy
+- **Visualization** — matplotlib, seaborn
+- **Reporting** — LaTeX (ctexart) for manuscripts, Excel for result tables
+- **Reproducibility** — Fixed random seed 20260902
 
 ---
 
